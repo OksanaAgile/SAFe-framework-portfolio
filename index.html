@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAFe 6.0 Big Picture | Interactive Team Presentation</title>
-    <!-- Tailwind CSS CDN for Modern Styling -->
+    <title>SAFe 6.0 Comprehensive Portfolio & CoE Handbook</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -14,6 +14,7 @@
                         royal: {
                             50: '#eff6ff',
                             100: '#dbeafe',
+                            200: '#bfdbfe',
                             500: '#3b82f6',
                             600: '#2563eb',
                             700: '#1d4ed8',
@@ -30,195 +31,290 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-royal-600 selection:text-white">
 
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-royal-900/95 backdrop-blur border-b border-royal-800 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-royal-600 p-2 rounded-lg text-white font-bold"><i class="fa-solid fa-network-wired"></i></span>
+                    <span class="font-bold text-lg tracking-wide">SAFe 6.0 CoE Portfolio</span>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#overview" class="hover:text-royal-300 transition">Overview</a>
+                    <a href="#foundation" class="hover:text-royal-300 transition">Foundation</a>
+                    <a href="#competencies" class="hover:text-royal-300 transition">Core Competencies</a>
+                    <a href="#palette" class="hover:text-royal-300 transition">Spanning Palette</a>
+                    <a href="#cadence" class="hover:text-royal-300 transition">Cadence & Roles</a>
+                    <a href="#metrics" class="hover:text-royal-300 transition">Measure & Grow</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header / Hero Section -->
-    <header class="bg-gradient-to-br from-royal-900 via-royal-800 to-royal-700 text-white py-16 px-4 shadow-xl">
-        <div class="max-w-6xl mx-auto text-center">
-            <span class="bg-royal-600 text-royal-100 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Interactive Portfolio & Team Presentation</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">The SAFe 6.0 Big Picture Framework</h1>
+    <header id="overview" class="bg-gradient-to-br from-royal-900 via-royal-800 to-royal-700 text-white py-20 px-4 shadow-xl">
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <span class="bg-royal-600 text-royal-100 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider inline-block">Enterprise Agile Delivery & Portfolio Presentation</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Scaled Agile Framework (SAFe 6.0) Big Picture</h1>
             <p class="text-lg md:text-xl text-royal-100 max-w-3xl mx-auto font-light leading-relaxed">
-                Empowering organizations to move quickly, improve innovation, align strategy to execution, and achieve sustainable Business Agility at scale.
+                A comprehensive guide and portfolio designed for Data & Analytics squads, Scrum Masters, Product Owners, and Enterprise Leaders achieving sustainable Business Agility.
             </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#foundation" class="bg-white text-royal-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-royal-50 transition">Explore Foundation</a>
+                <a href="#cadence" class="bg-royal-600 text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-royal-500 transition">View Team Cadence & Roles</a>
+            </div>
         </div>
     </header>
 
     <!-- Main Container -->
-    <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-24">
 
-        <!-- Section 1: Introduction to Business Agility -->
-        <section class="bg-white rounded-2xl shadow-md border border-slate-100 p-8">
+        <!-- Section 1: Business Agility & Core Philosophy -->
+        <section class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 md:p-12">
             <div class="flex items-center space-x-4 mb-6">
                 <div class="bg-royal-100 text-royal-700 p-3 rounded-xl text-2xl">
                     <i class="fa-solid fa-bolt"></i>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-slate-900">1. Business Agility & Core Philosophy</h2>
-                    <p class="text-slate-500 text-sm">Competitiveness and speed in the digital age</p>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">1. Achieving Business Agility</h2>
+                    <p class="text-slate-500 text-sm">Responding rapidly to market changes and delivering innovative digital solutions</p>
                 </div>
             </div>
             <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="space-y-4 text-slate-600 leading-relaxed">
+                <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
                     <p>
-                        <strong>Business Agility</strong> is the ability to compete and thrive in the digital age by quickly responding to market changes and delivering innovative digital solutions.
+                        All organizations need to move quickly and innovate to win. However, many organizations struggle with Agile labels while acting in traditional ways. Achieving true Lean-Agile benefits requires changing how organizations and teams operate.
                     </p>
                     <p>
-                        Achieving the full benefits of Lean and Agile requires moving beyond traditional structures, establishing predictable cadences, aligning cross-functional teams, and eliminating heavy micro-management.
+                        Leadership must set strategic objectives while avoiding micromanagement. SAFe provides a structured mechanism to align multiple Scrum teams, manage dependencies, and coordinate across all layers of the enterprise.
                     </p>
                 </div>
                 <div class="bg-royal-50 border-l-4 border-royal-600 p-6 rounded-r-xl space-y-3">
                     <h3 class="font-bold text-royal-900 flex items-center">
-                        <i class="fa-solid fa-bullseye mr-2 text-royal-600"></i> Key Objectives
+                        <i class="fa-solid fa-bullseye mr-2 text-royal-600"></i> Key Framework Objectives
                     </h3>
                     <ul class="space-y-2 text-sm text-slate-700">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-royal-600 mr-2"></i> Structured alignment across multiple Scrum teams</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-royal-600 mr-2"></i> Seamless coordination across organizational layers</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-royal-600 mr-2"></i> Continuous learning and faster response to change</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-royal-600 mr-2"></i> Regular rhythm for planning and execution across ARTs</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-royal-600 mr-2"></i> Structured alignment between business strategy and data execution</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-royal-600 mr-2"></i> Accelerated delivery with built-in quality and continuous feedback</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Section 2: Foundation & Core Values -->
-        <section class="space-y-6">
+        <!-- Section 2: Foundation (Core Values, Mindset, Principles & Leadership) -->
+        <section id="foundation" class="space-y-12">
             <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold text-slate-900">2. The Foundation & Core Values</h2>
-                <p class="text-slate-500 mt-2">The belief and value system driving SAFe 6</p>
+                <h2 class="text-3xl font-bold text-slate-900">2. The Foundation Layer</h2>
+                <p class="text-slate-500 mt-2">The cultural and philosophical bedrock of SAFe 6.0</p>
             </div>
+
+            <!-- 4 Core Values -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-royal-500 transition group">
-                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform">
-                        <i class="fa-solid fa-compass"></i>
-                    </div>
+                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform"><i class="fa-solid fa-compass"></i></div>
                     <h3 class="font-bold text-lg text-slate-900 mb-2">1. Alignment</h3>
-                    <p class="text-sm text-slate-600">Everyone works toward the same strategic outcomes, connecting strategy directly to execution.</p>
+                    <p class="text-sm text-slate-600">Everyone works toward identical strategic outcomes, connecting high-level strategy directly to execution.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-royal-500 transition group">
-                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
+                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform"><i class="fa-solid fa-eye"></i></div>
                     <h3 class="font-bold text-lg text-slate-900 mb-2">2. Transparency</h3>
-                    <p class="text-sm text-slate-600">Making all work, risks, and progress visible. Eliminates silos and builds deep organizational trust.</p>
+                    <p class="text-sm text-slate-600">Making all work, risks, and progress visible across squads, eliminating silos, and building trust.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-royal-500 transition group">
-                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
+                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform"><i class="fa-solid fa-users"></i></div>
                     <h3 class="font-bold text-lg text-slate-900 mb-2">3. Respect for People</h3>
-                    <p class="text-sm text-slate-600">Valuing individuals, diversity, autonomy, and fostering relationships built on mutual trust.</p>
+                    <p class="text-sm text-slate-600">Valuing individuals, autonomy, and cultural diversity with relationships built on mutual trust.</p>
                 </div>
-                <!-- Card 4 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-royal-500 transition group">
-                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
+                    <div class="text-royal-600 text-3xl mb-4 group-hover:scale-110 transition transform"><i class="fa-solid fa-chart-line"></i></div>
                     <h3 class="font-bold text-lg text-slate-900 mb-2">4. Relentless Improvement</h3>
-                    <p class="text-sm text-slate-600">Continuously reflecting, problem-solving, and optimizing process and technical capability.</p>
+                    <p class="text-sm text-slate-600">Constant reflection, root-cause analysis, and optimizing processes and technical capabilities every sprint.</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Section 3: 10 SAFe Principles Table / Grid -->
-        <section class="bg-white rounded-2xl shadow-md border border-slate-100 p-8">
-            <div class="flex items-center space-x-4 mb-6">
-                <div class="bg-royal-100 text-royal-700 p-3 rounded-xl text-2xl">
-                    <i class="fa-solid fa-list-check"></i>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900">3. The 10 SAFe Principles</h2>
-                    <p class="text-slate-500 text-sm">The operational backbone combining Agile, Lean, and Systems Thinking</p>
-                </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#1</span>
-                    <p class="text-sm font-medium text-slate-800">Take an economic view</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#2</span>
-                    <p class="text-sm font-medium text-slate-800">Apply systems thinking</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#3</span>
-                    <p class="text-sm font-medium text-slate-800">Assume variability; preserve options</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#4</span>
-                    <p class="text-sm font-medium text-slate-800">Build incrementally with fast, integrated learning cycles</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#5</span>
-                    <p class="text-sm font-medium text-slate-800">Base milestones on objective evaluation of working systems</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#6</span>
-                    <p class="text-sm font-medium text-slate-800">Make value flow without interruptions</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#7</span>
-                    <p class="text-sm font-medium text-slate-800">Apply cadence, synchronize with cross-domain planning</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#8</span>
-                    <p class="text-sm font-medium text-slate-800">Unlock the intrinsic motivation of knowledge workers</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#9</span>
-                    <p class="text-sm font-medium text-slate-800">Decentralize decision-making</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-3">
-                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">#10</span>
-                    <p class="text-sm font-medium text-slate-800">Organize around value</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 4: Key Roles in SAFe (SPCs & Leadership) -->
-        <section class="space-y-6">
-            <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold text-slate-900">4. Key Roles & Leadership in SAFe</h2>
-                <p class="text-slate-500 mt-2">Bridging executive strategy with team execution</p>
-            </div>
+            <!-- Lean-Agile Mindset & 10 Principles Grid -->
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- SPCs -->
                 <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 space-y-4">
-                    <div class="flex items-center space-x-3 text-royal-700">
-                        <i class="fa-solid fa-graduation-cap text-2xl"></i>
-                        <h3 class="text-xl font-bold text-slate-900">SAFe Practice Consultants (SPCs)</h3>
-                    </div>
-                    <p class="text-sm text-slate-600">Expert change agents and trusted advisors who guide the organization toward Business Agility:</p>
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center">
+                        <i class="fa-solid fa-brain text-royal-600 mr-3"></i> The Lean-Agile Mindset
+                    </h3>
+                    <p class="text-sm text-slate-600">Combines beliefs, assumptions, and actions of leaders embracing the Agile Manifesto and Lean thinking.</p>
                     <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Educator & Trainer:</strong> Trains leaders, POs, Scrum Masters, and teams.</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Transformation Architect:</strong> Leads Value Stream Identification workshops & ART designs.</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Coach & Facilitator:</strong> Mentors teams to optimize flow and collaboration.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>House of Lean:</strong> Focuses on value, respect for people and culture, flow, innovation, and relentless improvement.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Agile Manifesto:</strong> Emphasizes working software/data increments, customer collaboration, and adaptive planning over rigid processes.</span></li>
                     </ul>
                 </div>
-                <!-- Continuous Learning Culture -->
+
                 <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 space-y-4">
-                    <div class="flex items-center space-x-3 text-royal-700">
-                        <i class="fa-solid fa-book-open text-2xl"></i>
-                        <h3 class="text-xl font-bold text-slate-900">Continuous Learning Culture</h3>
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center">
+                        <i class="fa-solid fa-list-check text-royal-600 mr-3"></i> The 10 SAFe Principles
+                    </h3>
+                    <div class="grid grid-cols-2 gap-2 text-xs text-slate-700">
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">1. Take an economic view</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">2. Apply systems thinking</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">3. Assume variability; preserve options</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">4. Build incrementally with fast learning cycles</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">5. Base milestones on working systems</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">6. Make value flow without interruptions</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">7. Apply cadence & cross-domain planning</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">8. Unlock knowledge worker motivation</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">9. Decentralize decision-making</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200">10. Organize around value</div>
                     </div>
-                    <p class="text-sm text-slate-600">Built on three core pillars to foster psychological safety, technical growth, and innovation:</p>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Learning Organization:</strong> Shared vision and collective mastery across squads.</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Relentless Improvement:</strong> Constant reflection and root-cause analysis every sprint.</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-royal-600 mt-1 mr-2"></i> <span><strong>Culture of Innovation:</strong> Time and safety to experiment with new technologies and pipelines.</span></li>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The 7 Core Competencies -->
+        <section id="competencies" class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 md:p-12 space-y-8">
+            <div class="flex items-center space-x-4">
+                <div class="bg-royal-100 text-royal-700 p-3 rounded-xl text-2xl"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">3. The Seven Core Competencies of SAFe 6.0</h2>
+                    <p class="text-slate-500 text-sm">Essential enterprise capabilities required to achieve Business Agility</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Execution Layer -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <span class="bg-royal-600 text-white text-xs font-bold px-2.5 py-1 rounded">Execution & Flow</span>
+                    <ul class="space-y-2 text-sm text-slate-700 mt-2">
+                        <li><strong>1. Team & Technical Agility:</strong> High-performing cross-functional squads and built-in quality.</li>
+                        <li><strong>2. Agile Product Delivery (APD):</strong> Customer-centric value delivery through continuous delivery pipelines.</li>
+                        <li><strong>3. Enterprise Solution Delivery:</strong> Managing complex multi-train systems and cloud/data infrastructure.</li>
+                    </ul>
+                </div>
+                <!-- Strategy Layer -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <span class="bg-royal-700 text-white text-xs font-bold px-2.5 py-1 rounded">Strategy & Alignment</span>
+                    <ul class="space-y-2 text-sm text-slate-700 mt-2">
+                        <li><strong>4. Lean Portfolio Management (LPM):</strong> Strategy, funding, governance, and agile portfolio operations.</li>
+                        <li><strong>5. Organizational Agility:</strong> Strategy orientation and quick adaptation to market shifts.</li>
+                        <li><strong>6. Continuous Learning Culture:</strong> Learning organization, relentless improvement, and innovation culture.</li>
+                    </ul>
+                </div>
+                <!-- Foundation Layer -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <span class="bg-royal-900 text-white text-xs font-bold px-2.5 py-1 rounded">Foundation</span>
+                    <ul class="space-y-2 text-sm text-slate-700 mt-2">
+                        <li><strong>7. Lean-Agile Leadership:</strong> Leaders as lean-thinking managers and teachers who model core behaviors and lead change.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-    </main>
+        <!-- Section 4: The Spanning Palette (Vision, OKRs, AI, System Team, Measure & Grow) -->
+        <section id="palette" class="space-y-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900">4. The Spanning Palette</h2>
+                <p class="text-slate-500 mt-2">Guiding artifacts and roles applied across team, program, and portfolio contexts</p>
+            </div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 px-4 mt-20 border-t border-slate-800">
-        <div class="max-w-6xl mx-auto text-center space-y-2">
-            <p class="text-sm font-medium text-slate-300">SAFe 6.0 Framework Presentation & Portfolio</p>
-            <p class="text-xs text-slate-500">Designed with modern Royal Blue aesthetics for team collaboration and agile delivery.</p>
-        </div>
-    </footer>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Vision & OKRs -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+                    <div class="text-royal-600 text-2xl"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3 class="font-bold text-lg text-slate-900">Vision & OKRs</h3>
+                    <p class="text-sm text-slate-600">The Solution Vision defines the future state answering "Where are we going?" and "Why?". OKRs connect portfolio strategy to team PI objectives with quantifiable Key Results.</p>
+                </div>
+                <!-- Artificial Intelligence -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+                    <div class="text-royal-600 text-2xl"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="font-bold text-lg text-slate-900">Artificial Intelligence (AI)</h3>
+                    <p class="text-sm text-slate-600">Highlighted in SAFe 6 as a transformative tool applied to Intelligent Solutions (LLMs/ML), Value Stream Automation (CI/CD and code gen), and Operations & Insights.</p>
+                </div>
+                <!-- The System Team -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+                    <div class="text-royal-600 text-2xl"><i class="fa-solid fa-cogs"></i></div>
+                    <h3 class="font-bold text-lg text-slate-900">The System Team</h3>
+                    <p class="text-sm text-slate-600">Specialized Agile Team supporting the ART by building pipeline automation, cloud infrastructure, end-to-end integration testing, and staging environment maintenance.</p>
+                </div>
+            </div>
+        </section>
 
-</body>
-</html>
+        <!-- Section 5: Cadence, Roles & Data Team Artifacts -->
+        <section id="cadence" class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 md:p-12 space-y-8">
+            <div class="flex items-center space-x-4">
+                <div class="bg-royal-100 text-royal-700 p-3 rounded-xl text-2xl"><i class="fa-solid fa-calendar-days"></i></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">5. Cadence, Roles & Data Team Artifacts</h2>
+                    <p class="text-slate-500 text-sm">Structuring execution from 2-week iterations to 8-12 week Planning Intervals (PIs)</p>
+                </div>
+            </div>
+
+            <!-- Role Hierarchy Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="bg-royal-900 text-white">
+                            <th class="p-3 rounded-tl-lg">Level</th>
+                            <th class="p-3">Key Roles</th>
+                            <th class="p-3 rounded-tr-lg">Core Responsibilities</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="p-3 font-semibold text-royal-900">Portfolio Level</td>
+                            <td class="p-3">Epic Owners, Enterprise Architect</td>
+                            <td class="p-3">Portfolio strategy, strategic themes, Lean budgets, and epic governance.</td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-3 font-semibold text-royal-900">ART / Train Level</td>
+                            <td class="p-3">Business Owners, Product Management, System Architect, RTE</td>
+                            <td class="p-3">Multi-team synchronization, PI Planning execution, and continuous delivery pipelines.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-royal-900">Agile Team Level</td>
+                            <td class="p-3">Product Owner (PO), Scrum Master / Team Coach, Agile Team (Engineers/QA)</td>
+                            <td class="p-3">2-week iteration execution, backlog refinement with BDD, and building data increments.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Data Squad Artifacts & Sprint Cadence -->
+            <div class="grid md:grid-cols-2 gap-8 pt-4">
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-slate-900 flex items-center"><i class="fa-solid fa-file-code text-royal-600 mr-2"></i> Team-Level Data Artifacts</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><strong>Team Backlog:</strong> Prioritized work items managed via WSJF (Weighted Shortest Job First).</li>
+                        <li><strong>User Stories & Enablers:</strong> Functional (PO Happy Path) and technical enablers with `Given-When-Then` BDD.</li>
+                        <li><strong>Data Contracts:</strong> Explicit schema specifications, target types (e.g., VARCHAR, NUMBER), and nullability rules attached to DoR.</li>
+                        <li><strong>Iteration Goals:</strong> 1-sentence commitment for the 2-week sprint.</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-slate-900 flex items-center"><i class="fa-solid fa-clock-rotate-left text-royal-600 mr-2"></i> The 2-Week Sprint Cadence</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><strong>Day 1:</strong> Iteration Planning & Capacity Check against Definition of Ready (DoR).</li>
+                        <li><strong>Days 2–9:</strong> Pipeline development, dbt modeling, Daily Standup (walking board right-to-left), and mid-sprint refinement.</li>
+                        <li><strong>Day 10:</strong> Iteration Review (Demo vs. BDD) & Retrospective for continuous improvement.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Measure and Grow -->
+        <section id="metrics" class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 md:p-12 space-y-8">
+            <div class="flex items-center space-x-4">
+                <div class="bg-royal-100 text-royal-700 p-3 rounded-xl text-2xl"><i class="fa-solid fa-chart-pie"></i></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">6. Measure & Grow Cycle</h2>
+                    <p class="text-slate-500 text-sm">Evaluating enterprise progress toward Business Agility and turning metrics into action</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="font-bold text-royal-900">1. Flow Metrics</h4>
+                    <p class="text-sm text-slate-600">Measures how efficiently the system delivers value through the Continuous Delivery Pipeline (Velocity, Flow Time, Flow Load).</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="font-bold text-royal-900">2. Outcome Metrics</h4>
+                    <p class="text-sm text-slate-600">Measures whether solutions built deliver target business and customer value (OKRs & KPIs, feature adoption).</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="font-bold text-royal-900">3. Competency Metrics</h4>
+                    <p class="text-sm text-slate-600
